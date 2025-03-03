@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Courgette&family=Eater&family=Kavoon&family=Mystery+Quest&family=Poppins&family=Ribeye+Marrow&family=Sancreek&family=Slabo+27px&display=swap');
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.converter-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 15px;
+}
+
+@media (max-width: 450px) {
+    .converter-container {
+        width: 90%;
+    }
+}
+
+/* style.css */
+.back-link {
+    display: inline-block; /* Make it behave like a block element */
+    margin-bottom: 20px;   /* Add some spacing below */
+    padding: 10px 15px;      /* Add padding */
+    background-color: #4CAF50; /* Green background */
+    color: white;             /* White text */
+    text-decoration: none;   /* Remove underline from link */
+    border-radius: 5px;      /* Add some rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.back-link:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    color: #010101;
+    font-family: "Black Ops One", serif;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f0f5f4;
+   
+}
+
+.image-area {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-area img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-area {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(16, 210, 216);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unit-type {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.box-3d img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.box-3d:hover img {
+    transform: translateZ(20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box-3d h2 {
+    margin-top: 10px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    transform: none;
+    font-size: 1em;
+}
+
+.box-3d:hover h2 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.unit-type:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 1201px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        max-width: 1400px;
+    }
+
+    .unit-type {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box-3d img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+
+    .unit-type {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box-3d img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .unit-type {
+        width: 180px;
+        height: 180px;
+    }
+
+    .box-3d img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .unit-type {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .box-3d {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .box-3d img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .box-3d h2 {
+        margin-top: 0;
+        font-size: 1em;
+    }
+}

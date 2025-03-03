@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Age Converter</h1>
+    <a href="index.html" class="back-link">Back to Main Page</a>
+    <div class="converter-container">
+        <div class="input-group">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate">
+        </div>
+        <div class="input-group">
+            <label for="targetDate">Target Date (Optional):</label>
+            <input type="date" id="targetDate">
+        </div>
+        <div class="input-group">
+            <label for="toUnit">Convert To:</label>
+            <select id="toUnit">
+                <option value="years">Years</option>
+                <option value="months">Months</option>
+                <option value="days">Days</option>
+                <option value="weeks">Weeks</option>
+                <option value="hours">Hours</option>
+                <option value="minutes">Minutes</option>
+                <option value="seconds">Seconds</option>
+            </select>
+        </div>
+        <button id="convertButton">Calculate Age</button>
+        <div class="result">
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+        </div>
+    </div>
+    <script src="age.js"></script>
+</body>
+</html>

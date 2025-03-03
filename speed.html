@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speed Converter</h1>
+    <a href="index.html" class="back-link">Back to Main Page</a>
+    <div class="converter-container">
+        <div class="input-group">
+            <label for="amount">Speed:</label>
+            <input type="number" id="amount">
+        </div>
+        <div class="input-group">
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="mps">Meters per second (m/s)</option>
+                <option value="kph">Kilometers per hour (km/h)</option>
+                <option value="mph">Miles per hour (mph)</option>
+                <option value="knots">Knots (kn)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="mps">Meters per second (m/s)</option>
+                <option value="kph.">Kilometers per hour (km/h)</option>
+                <option value="mph">Miles per hour (mph)</option>
+                <option value="knots">Knots (kn)</option>
+            </select>
+        </div>
+        <button id="convertButton">Convert</button>
+        <div class="result">
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+        </div>
+    </div>
+    <script src="speed.js"></script>
+</body>
+</html>

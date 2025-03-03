@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1>Scientific Calculator</h1>
+    <a href="index.html" class="back-link">Back to Main Page</a>
+
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="operator" onclick="calculate('CE')">CE</button>
+            <button class="operator" onclick="calculate('^')">^</button> 
+            <button class="operator" onclick="calculate('%')">%</button>
+            <button class="operator" onclick="calculate('AC')">AC</button>
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button class="operator" onclick="calculate('/')">/</button>
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button class="operator" onclick="calculate('*')">x</button> 
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button class="operator" onclick="calculate('-')">-</button>
+            <button onclick="calculate('00')">00</button>
+            <button onclick="calculate('0')">0</button>
+            <button onclick="calculate('.')">.</button>
+            <button class="operator" onclick="calculate('+')">+</button>
+            <button class="operator equal" onclick="calculate('=')">=</button>
+            <button onclick="calculate('Math.sqrt(')">√</button>
+            <button onclick="calculate('Math.E')">e</button>
+            <button onclick="calculate('π')">π</button>
+            <button onclick="calculate('sin(')">sin</button>
+            <button onclick="calculate('cos(')">cos</button>
+            <button onclick="calculate('tan(')">tan</button>
+            <button onclick="calculate('log(')">log</button>
+            
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

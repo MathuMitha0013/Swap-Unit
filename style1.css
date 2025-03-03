@@ -1,0 +1,85 @@
+/* style1.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  background-color: #333; /* Dark background for calculator */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Adjust width as needed */
+}
+
+.display {
+  background-color: #555; /* Slightly lighter background for display */
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden; /* Prevent text from overflowing */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  grid-gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #666; /* Gray background for buttons */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #888; /* Lighter gray on hover */
+}
+
+.operator {
+  background-color: #f9aa00; /* Orange for operators */
+  color: black;
+}
+
+.operator:hover {
+  background-color: #f89d00;
+}
+
+.equal {
+  background-color: #4CAF50; /* Green for equals */
+  color: white;
+
+}
+
+.equal:hover {
+  background-color: #45a049;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #45a049;
+}

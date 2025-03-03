@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Unit</title>
+    <link rel="icon" href="image/DALL·E 2025-02-10 20.16.48 - A modern and sleek logo design for 'Swap Units'. The logo features interlocking geometric shapes, symbolizing exchange and conversion. The design incl.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SWAP UNIT</h1>
+    <div class="container">
+
+        <div class="unit-type" onclick="navigateTo('scientificCalculator')">
+            <div class="box-3d">
+                <img src="image/sc1-removebg-preview.png" alt="Scientific Calculator">
+                <h2>Scientific Calculator</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('currency')">
+            <div class="box-3d">
+                <img src="image/c1-removebg-preview.png" alt="Currency">
+                <h2>Currency</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('length')">
+            <div class="box-3d">
+                <img src="image/le-removebg-preview.png" alt="Length">
+                <h2>Length</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('area')">
+            <div class="box-3d">
+                <img src="image/a1-removebg-preview.png" alt="Area">
+                <h2>Area</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('volume')">
+            <div class="box-3d">
+                <img src="image/v1-removebg-preview.png" alt="Volume">
+                <h2>Volume</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('weight')">
+            <div class="box-3d">
+                <img src="image/wei1-removebg-preview.png" alt="Weight">
+                <h2>Weight</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('temperature')">
+            <div class="box-3d">
+                <img src="image/t1-removebg-preview.png" alt="Temperature">
+                <h2>Temperature</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('speed')">
+            <div class="box-3d">
+                <img src="image/s1.webp" alt="Speed">
+                <h2>Speed</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('pressure')">
+            <div class="box-3d">
+                <img src="image/pr1-removebg-preview.png" alt="Pressure">
+                <h2>Pressure</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('power')">
+            <div class="box-3d">
+                <img src="image/po1-removebg-preview.png" alt="Power">
+                <h2>Power</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('numberSystem')">
+            <div class="box-3d">
+                <img src="image/nu1-removebg-preview.png" alt="Number System">
+                <h2>Number System</h2>
+            </div>
+        </div>
+        <div class="unit-type" onclick="navigateTo('age')">
+            <div class="box-3d">
+                <img src="image/age1-removebg-preview.png" alt="Age">
+                <h2>Age</h2>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function navigateTo(unitType) {
+            if (unitType === 'currency') {
+                window.open('currency.html', '_blank');
+            } else if (unitType === 'length') {
+                window.open('length.html', '_blank');
+            } else if (unitType === 'area') {
+                window.open('area.html', '_blank');
+            } else if (unitType === 'volume') {
+                window.open('volume.html', '_blank');
+            } else if (unitType === 'weight') {
+                window.open('weight.html', '_blank');
+            } else if (unitType === 'temperature') {
+                window.open('temperature.html', '_blank');
+            } else if (unitType === 'speed') {
+                window.open('speed.html', '_blank');
+            } else if (unitType === 'pressure') {
+                window.open('pressure.html', '_blank');
+            } else if (unitType === 'power') {
+                window.open('power.html', '_blank');
+            } else if (unitType === 'numberSystem') {
+                window.open('number_system.html', '_blank');
+            } else if (unitType === 'age') {
+                window.open('age.html', '_blank');
+            } else if (unitType === 'scientificCalculator') {
+                window.open('calculator.html', '_blank');
+            } else {
+                alert("Navigating to " + unitType);
+            }
+        }
+    </script>
+</body>
+</html>

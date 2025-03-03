@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Power Converter</h1>
+    <a href="index.html" class="back-link">Back to Main Page</a>
+    <div class="converter-container">
+        <div class="input-group">
+            <label for="amount">Power:</label>
+            <input type="number" id="amount">
+        </div>
+        <div class="input-group">
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="watt">Watt (W)</option>
+                <option value="kilowatt">Kilowatt (kW)</option>
+                <option value="megawatt">Megawatt (MW)</option>
+                <option value="gigawatt">Gigawatt (GW)</option>
+                <option value="horsepower">Horsepower (hp)</option>
+                <option value="btu">BTU per hour (BTU/h)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="watt">Watt (W)</option>
+                <option value="kilowatt">Kilowatt (kW)</option>
+                <option value="megawatt">Megawatt (MW)</option>
+                <option value="gigawatt">Gigawatt (GW)</option>
+                <option value="horsepower">Horsepower (hp)</option>
+                <option value="btu">BTU per hour (BTU/h)</option>
+            </select>
+        </div>
+        <button id="convertButton">Convert</button>
+        <div class="result">
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+        </div>
+    </div>
+    <script src="power.js"></script>
+</body>
+</html>
