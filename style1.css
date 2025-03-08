@@ -1,4 +1,4 @@
-/* style1.css */
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -11,27 +11,27 @@ body {
 }
 
 .calculator {
-  background-color: #333; /* Dark background for calculator */
+  background-color: #333; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px; /* Adjust width as needed */
+  width: 300px; 
 }
 
 .display {
-  background-color: #555; /* Slightly lighter background for display */
+  background-color: #555; 
   color: white;
   padding: 15px;
   font-size: 24px;
   text-align: right;
   margin-bottom: 10px;
   border-radius: 4px;
-  overflow: hidden; /* Prevent text from overflowing */
+  overflow: hidden; 
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  grid-template-columns: repeat(4, 1fr); 
   grid-gap: 10px;
 }
 
@@ -41,17 +41,16 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #666; /* Gray background for buttons */
-  color: white;
+  background-color: #666; 
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #888; /* Lighter gray on hover */
+  background-color: #888; 
 }
 
 .operator {
-  background-color: #f9aa00; /* Orange for operators */
+  background-color: #f9aa00; 
   color: black;
 }
 
@@ -60,7 +59,7 @@ button:hover {
 }
 
 .equal {
-  background-color: #4CAF50; /* Green for equals */
+  background-color: #4CAF50; 
   color: white;
 
 }

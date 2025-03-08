@@ -60,26 +60,21 @@ button:hover {
     }
 }
 
-/* style.css */
+
 .back-link {
-    display: inline-block; /* Make it behave like a block element */
-    margin-bottom: 20px;   /* Add some spacing below */
-    padding: 10px 15px;      /* Add padding */
-    background-color: #4CAF50; /* Green background */
-    color: white;             /* White text */
-    text-decoration: none;   /* Remove underline from link */
-    border-radius: 5px;      /* Add some rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    display: inline-block; 
+    margin-bottom: 20px;   
+    padding: 10px 15px;      
+    background-color: #4CAF50; 
+    color: white;             
+    border-radius: 5px;      
+    transition: background-color 0.3s ease; 
 }
 
 .back-link:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
-
-
-
-/* style.css */
 body {
     font-family: sans-serif;
     margin: 0;
