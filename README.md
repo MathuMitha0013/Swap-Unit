@@ -23,7 +23,7 @@ SwapUnit is a user-friendly website designed to simplify unit conversions across
 * **Fast and Efficient:** Get your conversions done quickly with SwapUnit's efficient performance.
 ## How to Use:
 
-1. Visit the SwapUnit website: [Link to your website]
+1. Visit the SwapUnit website: [https://mathumitha0013.github.io/Swap-Unit/]
 2. Select the type of conversion you need from the available categories.
 3. Enter the value you want to convert.
 4. SwapUnit will instantly display the converted value in the desired unit.
